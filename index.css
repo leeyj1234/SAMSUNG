@@ -1,0 +1,143 @@
+a {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    color: #000;
+    text-decoration: none;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+img{
+    max-width: 100%;
+}
+
+#header{
+    position: relative;
+    width: 100%;
+    z-index: 210;
+    border-bottom: 1px solid #ebebeb;
+    background: #fff;
+
+}
+
+#header .s-inner{
+    max-width: 1440px;
+    display: flex;
+    height: 80px;
+    margin: 0 auto;
+    padding: 0 24px;
+
+}
+
+#header .logo{
+    position: relative;
+    flex: none;  /* flex item 크기 고정*/
+    height: 100% ;
+    margin-right: 50px;
+    white-space: nowrap;
+    /* float: left; */
+}
+
+#header .logo::after{
+    content: "";
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle ;
+
+}
+
+#header .logo img{
+    height: 16px;
+
+    vertical-align: middle;
+
+}
+
+#header .gnb_menu{
+    display: flex;
+    /* width: 100%; */
+
+}
+
+#header .gnb{
+    align-self: center;
+
+
+}
+
+#header ul{
+    list-style: none;
+    white-space: nowrap;
+}
+
+#header .gnb1depth{
+    display: flex;
+    
+
+
+    
+}
+
+#header .gnb >ul > li {
+    height: 100%;
+    padding: 25px 0 23px;
+    line-height: 1;
+    
+
+}
+
+#header .gnb >ul > li > a {
+    position: relative;
+    display: block;
+    font-size: 14px;
+    color: #000;
+    font-weight: bold;
+    padding: 9px 7px;
+    border-radius: 20px;
+
+}
+
+#header .gnb >ul > li.blank {
+    display: block;
+    width: 100%;
+    padding: 0;
+}
+
+#header .header_right_gnb {
+    position: relative;
+    display:  flex;
+    height: 100%;
+    margin-left: -12px;
+    white-space: nowrap;
+}
+
+#header .header_right_gnb > ul {
+    display:  flex;
+    /* height: 100%; */
+}
+
+#header .header_right_gnb > ul >li {
+    /* align-self: center; */
+    height: 100%;
+    padding: 0 12px 0 13px;
+    vertical-align: middle;
+
+}
+
+#header .header_right_gnb > ul >li > a{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    line-height: 80px;
+    font-size: 16px;
+    color: #000;
+    font-weight: bold;
+    vertical-align: middle;
+
+}
+
+#header .header_right_gnb > ul >li > a > i {
+    width: 23px;
+    height: 23px;
+}
