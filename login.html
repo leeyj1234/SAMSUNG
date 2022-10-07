@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- issue!! favicon 추가하기 -->
+    <!-- CSS -->
+    <link rel="stylesheet" href="login.css" />
+    <title>로그인&nbsp;|&nbsp;삼성계정</title>
+  </head>
+  <body class="login">
+    <div class="wrapper">
+      <header class="one-header">
+        <div class="header-inner">
+          <div class="logo">
+            <h1>
+              <img src="./images/txt_logo_black.svg" alt="Samsung account" />
+            </h1>
+          </div>
+        </div>
+      </header>
+
+      <main class="one-main" role="main">
+        <div class="main-inner">
+          <div class="container">
+            <div class="title">
+              <h1>삼성계정으로 로그인</h1>
+              <div class="content">
+                <div class="one-forms-login">
+                  <form action="#">
+                    <fieldset>
+                      <legend>Account Samsung login</legend>
+                      <div class="new-idform">
+                        <div class="one-input-container">
+                          <label for="lblLgnPlnID" id="lblLgnID">
+                            이메일 주소 또는 전화번호
+                          </label>
+                          <input type="text" id="lblLgnID" autocomplete="off" />
+													<div class="error-msg">
+														<div class="error-need-id">
+															ID를 입력하십시오.
+														</div>
+														<div class="error-incorrect-id">															
+															유효하지 않은 ID예요.                      
+														</div>
+													</div>
+													<!-- issue!! 재시작점 div.one-checkBox -->
+                        </div>
+                      </div>
+                    </fieldset>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
