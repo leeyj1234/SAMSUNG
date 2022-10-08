@@ -34,7 +34,6 @@ img{
     position: relative;
     flex: none;  /* flex item 크기 고정*/
     height: 100% ;
-    margin-right: 50px;
     white-space: nowrap;
     /* float: left; */
 }
@@ -99,8 +98,8 @@ img{
 }
 
 #header .gnb >ul > li.blank {
+    width: 50px;
     display: block;
-    width: 100%;
     padding: 0;
 }
 
