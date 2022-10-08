@@ -91,10 +91,15 @@ img{
     display: block;
     font-size: 14px;
     color: #000;
+    background-color: white;
     font-weight: bold;
     padding: 9px 7px;
     border-radius: 20px;
+}
 
+#header .gnb >ul > li.active > a {   
+    background-color: #000;
+    color: white;
 }
 
 #header .gnb >ul > li.blank {
