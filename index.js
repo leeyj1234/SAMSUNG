@@ -2,21 +2,17 @@
 // 1) header gnb mouseover
 
 const gnb1depth_list = document.querySelectorAll('.gnb1depth > li:not(.blank)');
-
 gnb1depth_list.forEach(gnb1depth => {
-  gnb1depth.addEventListener('mouseover', e => {
+  gnb1depth.addEventListener('mouseenter', e => {
     target = e.target;
-    target.parentElement.classList.add('active');
+    target.classList.add('active');
   });
-})
-
-
-// gnb1depth_list.forEach(gnb1depth => {
-//   gnb1depth.addEventListener('mouseout', e => {
-//     target = e.target;
-//     target.parentElement.classList.remove('active');
-//   }); // mouseout 이 아니라, gnb2depth 벗어날때 active remove 해야 
-// });
+  
+  gnb1depth.addEventListener('mouseleave', e => {
+    target = e.target;
+    target.classList.remove('active');
+  });
+});
 
 // 2) carousel slider 
 
@@ -38,7 +34,7 @@ setInterval(function(){
     fill : "both"
   });
   currentSlide ++; 
-  if(currentSlide === (slide.length-1)){
+  if(currentSlide === (mainSlide.length-1)){
     currentSlide = 0 ;
   }
 },3000); 
