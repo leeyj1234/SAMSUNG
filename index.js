@@ -37,4 +37,4 @@ setInterval(function(){
   if(currentSlide === (mainSlide.length-1)){
     currentSlide = 0 ;
   }
-},3000); 
+},4000); 

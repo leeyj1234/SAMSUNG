@@ -330,7 +330,7 @@ img{
     width: 202px;
     height: 268px;
     border-radius: 20px;
-    background-color: #f7f7f7;
+    /* background-color: #f7f7f7; */
 }
 
 .gnb_menu .new-prd-list .prd-list-wrap .sub-prd a {
@@ -343,12 +343,18 @@ img{
     height: 100%;
     border-radius: 20px;
     overflow: hidden;
+    position: absolute; /* 주석 해제하면 글씨만 보임*/
+}
+
+.gnb_menu .new-prd-list .prd-list-wrap .pc-pic {
+    display: block;
 }
 .gnb_menu .new-prd-list .prd-list-wrap .sub-prd .txt-grp {
     height: 86px;
     margin-top: 18px;
     white-space: normal;
     position: absolute;
+    /* position: relative; */
     margin: 164px 0 0 20px;
     width: calc(100% - 40px);
 }
@@ -415,10 +421,58 @@ img{
     line-height: 20px;
 }
 
+.gnb_menu .new-prd-list .prd-list-wrap .sub-prd .tit{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 45px;
+    font-size: 18px;
+    line-height: 23px;
+    word-break: keep-all;
+}
 
+.gnb_menu .new-prd-list .prd-list-wrap .tit {
+    display: inline-block;
+    width: 100%;
+    display: -webkit-box;
+    text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    white-space: normal;
+
+    font-weight: bold;
+    /* height: 74px; */
+    max-height: 74px;
+}
+
+.gnb_menu .new-prd-list .prd-list-wrap .desc {
+    display: inline-block;
+    width: 100%;
+    display: -webkit-box;
+    text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    white-space: normal;
+}
+
+.gnb_menu .new-prd-list .tit.theme-blk {
+    color: #000;
+}
 
 .gnb_menu .new-prd-list .desc.theme-blk{
     color: #707070;
+}
+
+.gnb_menu .new-prd-list .prd-list-wrap .sub-prd .desc {
+    margin-top: 8px;
+    max-height: 33px;
+    font-size: 12px;
+    line-height: 16px;
 }
 
 .gnb_menu .gnb2depth a ::after{
@@ -524,104 +578,55 @@ img{
 
 }
 
+#container .carousel-container .slide{
+   position: relative;
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*
-
-#container .carousel-container #carousel .slide img:nth-child(1){
-    position: relative;
-    left: 0px;
-    top: 0px;
-    z-index: 998;
-    width: 1903px
-
-}
-#container .carousel-container #carousel .slide img:nth-child(2){
-    position: relative;
-    left: -1903px;
-    top: 0px;
-    z-index: 998;
-    width: 1903px
 
 }
 
-#container .carousel-container #carousel .slide img:nth-child(3){
-    position: relative;
-    left: -3806px;
-    top: 0px;
-    z-index: 998;
-    width: 1903px
-
+#container .carousel-container .slide-text{
+   position: absolute;
+   left: 350px;
+   top: 250px;
 }
 
-#container .carousel-container #carousel .slide img:nth-child(4){
-    position: relative;
-    left: -5709px;
-    top: 0px;
-    z-index: 998;
-    width: 1903px
 
-}
+#container .carousel-container .slide-text > .title {
+    font-size: 2.708vw;
+    display: block;
+    line-height: 1.15;
+    font-weight: bold;
+    color: #000;
+    word-break: keep-all;
 
-#container .carousel-container #carousel .slide img:nth-child(5){
-    position: relative;
-    left: -7612px;
-    top: 0px;
-    z-index: 998;
-    width: 1903px
+    }
 
-}
+#container .carousel-container .slide-text > button {
+    display: inline-block;
+    overflow: hidden;
+    max-width: 100%;
+    min-width: 96px;
+    height: 40px;
+    margin: 0 5px;
+    line-height: 38px;
+    padding: 0 24px;
+    font-weight: bold;
+    font-size: 14px;
+    color: #ffffff;
+    text-align: center;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    border: 1px solid #ffffff;
+    border-radius: 20px;
+    background: transparent;
+    box-sizing: border-box;
+    vertical-align: middle;
+    cursor: pointer;
+    }
+    
+    
 
-#container .carousel-container #carousel .slide img:nth-child(6){
-    position: relative;
-    left: -9515px;
-    top: 0px;
-    z-index: 998;
-    width: 1903px
 
-}
 
-#container .carousel-container #carousel .slide img:nth-child(7){
-    position: relative;
-    left: -11418px;
-    top: 0px;
-    z-index: 998;
-    width: 1903px
 
-}
-
-#container .carousel-container #carousel .slide img:nth-child(8){
-    position: relative;
-    left: -13321px;
-    top: 0px;
-    z-index: 998;
-    width: 1903px
-
-}
-
-#container .carousel-container #carousel .slide img:nth-child(9){
-    position: relative;
-    left: -15224px;
-    top: 0px;
-    z-index: 998;
-    width: 1903px
-
-}
-/*
