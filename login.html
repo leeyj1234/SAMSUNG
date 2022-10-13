@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- issue!! favicon 추가하기 -->
+    <!-- FAVICON -->
+    <link rel="icon" href="images/favicon.ico" />
     <!-- CSS -->
     <link rel="stylesheet" href="login.css" />
     <title>로그인&nbsp;|&nbsp;삼성계정</title>
@@ -15,7 +16,9 @@
         <div class="header-inner">
           <div class="logo">
             <h1>
-              <img src="./images/txt_logo_black.svg" alt="Samsung account" />
+              <a href="index.html">
+                <img src="./images/txt_logo_black.svg" alt="Samsung account" />
+              </a>
             </h1>
           </div>
         </div>
@@ -34,19 +37,54 @@
                       <div class="new-idform">
                         <div class="one-input-container">
                           <label for="lblLgnPlnID" id="lblLgnID">
-                            이메일 주소 또는 전화번호
+                            <!-- issue!! js -->
+                            <!-- 이메일 주소 또는 전화번호 -->
                           </label>
-                          <input type="text" id="lblLgnID" autocomplete="off" />
-													<div class="error-msg">
-														<div class="error-need-id">
-															ID를 입력하십시오.
-														</div>
-														<div class="error-incorrect-id">															
-															유효하지 않은 ID예요.                      
-														</div>
-													</div>
-													<!-- issue!! 재시작점 div.one-checkBox -->
+                          <input type="text" id="lblLgnID" autocomplete="off" placeholder="이메일 주소 또는 전화번호"/>
+                          <div class="error-msg">
+                            <div class="error-need-id">ID를 입력하십시오.</div>
+                            <div class="error-incorrect-id">
+                              유효하지 않은 ID예요.
+                            </div>
+                          </div>
+                          <div class="one-checkBox" id="rememberID">
+                            <input
+                              type="checkbox"
+                              id="remIdChk"
+                              autocomplete="off"
+                            />
+                            <label for="remIdChk">
+                              <!-- issue!! js -->
+                              <span></span>ID 기억하기
+                            </label>
+                          </div>
                         </div>
+                      </div>
+                      <div class="mbr_signin">
+                        <div class="one-btn-container">
+                          <button
+                            id="signInButton"
+                            type="button"
+                            disabled="disabled">
+                            다음
+                          </button>
+                        </div>
+                        <p>
+                          <a href="#"> ID 찾기 </a>
+                        </p>
+                        <p>
+                          <a href="#">계정 생성</a>
+                        </p>
+                      </div>
+                      <div class="one-btn-container google">
+                        <button class="one-button" type="button">
+                          <span>Google 계정으로 로그인</span>
+                        </button>
+                      </div>
+                      <div class="one-btn-container qrcode">
+                        <button class="one-button" type="button">
+                          <span>QR 코드로 로그인</span>
+                        </button>
                       </div>
                     </fieldset>
                   </form>
@@ -56,6 +94,23 @@
           </div>
         </div>
       </main>
+
+      <footer class="one-footer" role="contentinfo">
+        <div class="footer-inner">
+          <div class="footer-links">
+            <a href="#">이용약관</a>
+            <a href="#">개인정보 처리방침</a>
+            <a href="#">공지</a>
+            <a href="#" >문의하기</a>
+          </div>
+          <div  class="footer-right">
+            <a href="index.html"  class="footer-logo">
+              <img src="https://account.samsung.com/accounts/v1/resources/one-ui/images/layout/txt_foo_logo.png" alt="Samsung account" />
+            </a>
+            <address class="footer-address">Copyright © 1995-2022 Samsung. All Rights Reserved.</address>         
+          </div>          
+        </div>
+      </footer>
     </div>
   </body>
 </html>
