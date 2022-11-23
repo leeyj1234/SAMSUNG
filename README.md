@@ -1,4 +1,4 @@
-## 1. 스터디명 : 잔디를 심어봅시다!
+## 1. 스터디명 : 잔디를 심어봅시다!(엘리스 1차 스터디)
 ## 2. 수행목적:
 - 엘리스가 진행하는 기초반 스터디 완주
 - 기한내 목표 프로젝트(**SAMSUNG**클론코딩) 작업완료
@@ -17,3 +17,4 @@
 - [x] 10/8일 기초반 스터디 2주차 진행
 ## 4. [참조링크](https://github.com/eunbbori/SAMSUNG_CLONE)
 ## 5. 참여자: [@eunbbori](https://github.com/eunbbori) [@leeyj1234](https://github.com/leeyj1234)
+## 6.![제목을-입력해주세요_-001](https://user-images.githubusercontent.com/91528911/203499896-e8a94f3e-db4b-453a-bbb1-b612a0c3ccef.png)
